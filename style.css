@@ -1,0 +1,43 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgs
+{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    display: flex;
+    overflow: hidden;
+
+}
+
+img
+{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    animation: move 10s infinite;
+}
+@keyframes move{
+    20%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    60%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
